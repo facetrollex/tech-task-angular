@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { DataModel } from '../data.model';
+import { NAVIGATION } from '../../navigation';
 
 @Component({
   selector: 'app-paper',
   templateUrl: './paper.component.html',
   styleUrls: ['./paper.component.scss']
 })
-export class PaperComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class PaperComponent {
+  public data: DataModel = NAVIGATION[2];
+  constructor() {}
 }

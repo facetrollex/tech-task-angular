@@ -1,13 +1,16 @@
 <div class="app">
+
   <div class="content-container">
     <router-outlet></router-outlet>
   </div>
+
   <div class="nav">
-    <div>
-      <a routerLink="/hazmat" routerLinkActive="active">Hazmat</a>
-      <a routerLink="/soap" routerLinkActive="active">Soap</a>
-      <a routerLink="/paper" routerLinkActive="active">Paper</a>
-      <a routerLink="/desinfectant" routerLinkActive="active">Desinfectant</a>
+    <div *ngFor="let navItem of navigation">
+      <a routerLink="{{ navItem.name.toLowerCase()}}" routerLinkActive="active">
+        {{ navItem.name}}
+        <img [src]="navItem.image" style="width: 50px; height: 50px;">
+      </a>
     </div>
   </div>
+
 </div>

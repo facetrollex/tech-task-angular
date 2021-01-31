@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { DataModel } from '../data.model';
+import { NAVIGATION } from '../../navigation';
 
 @Component({
   selector: 'app-hazmat',
   templateUrl: './hazmat.component.html',
   styleUrls: ['./hazmat.component.scss']
 })
-export class HazmatComponent implements OnInit {
+export class HazmatComponent {
 
+  public data: DataModel = NAVIGATION[0];
   constructor() { }
-
-  ngOnInit(): void {
-  }
-
 }
