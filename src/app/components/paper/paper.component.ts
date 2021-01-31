@@ -5,7 +5,6 @@ import { NAVIGATION } from '../../navigation';
 @Component({
   selector: 'app-paper',
   templateUrl: './paper.component.html',
-  styleUrls: ['./paper.component.scss']
 })
 export class PaperComponent {
   public data: DataModel = NAVIGATION[2];

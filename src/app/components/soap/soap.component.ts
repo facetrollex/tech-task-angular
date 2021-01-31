@@ -5,7 +5,6 @@ import { DataModel } from '../data.model';
 @Component({
   selector: 'app-soap',
   templateUrl: './soap.component.html',
-  styleUrls: ['./soap.component.scss']
 })
 export class SoapComponent {
   public data: DataModel = NAVIGATION[1];

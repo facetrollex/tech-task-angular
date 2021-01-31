@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'soap', component: SoapComponent },
   { path: 'paper', component: PaperComponent },
   { path: 'desinfectant', component: DesinfectantComponent },
-  { path: '**', component: SoapComponent },
+  { path: '**', redirectTo: 'soap' },
 ];
 
 @NgModule({

@@ -5,11 +5,15 @@
   </div>
 
   <div class="nav">
-    <div *ngFor="let navItem of navigation">
-      <a routerLink="{{ navItem.name.toLowerCase()}}" routerLinkActive="active">
+    <div *ngFor="let navItem of navigation" class="nav-item"
+         routerLink="{{ navItem.name.toLowerCase()}}"
+         routerLinkActive="active">
+      <a>
         {{ navItem.name}}
-        <img [src]="navItem.image" style="width: 50px; height: 50px;">
       </a>
+      <div>
+        <img [src]="navItem.image" class="image" />
+      </div>
     </div>
   </div>
 

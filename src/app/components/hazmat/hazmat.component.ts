@@ -5,7 +5,6 @@ import { NAVIGATION } from '../../navigation';
 @Component({
   selector: 'app-hazmat',
   templateUrl: './hazmat.component.html',
-  styleUrls: ['./hazmat.component.scss']
 })
 export class HazmatComponent {
 
